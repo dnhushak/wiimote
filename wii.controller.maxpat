@@ -7,7 +7,7 @@
 			"revision" : 4
 		}
 ,
-		"rect" : [ 2560.0, 22.0, 2560.0, 1418.0 ],
+		"rect" : [ 0.0, 22.0, 2560.0, 1418.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -29,6 +29,17 @@
 		"showontab" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-152",
+					"maxclass" : "preset",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"patching_rect" : [ 1080.0, 855.0, 100.0, 40.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-184",
@@ -36,7 +47,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1080.0, 945.0, 91.0, 18.0 ],
+					"patching_rect" : [ 1215.0, 1020.0, 91.0, 18.0 ],
 					"text" : "storagewindow"
 				}
 
@@ -78,15 +89,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1095.0, 1065.0, 75.0, 20.0 ],
+					"patching_rect" : [ 1095.0, 1065.0, 121.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 3723, 97, 4569, 797 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 583, 69, 996, 966 ]
+						"client_rect" : [ 4, 44, 358, 172 ],
+						"storage_rect" : [ 583, 69, 1235, 1178 ]
 					}
 ,
-					"text" : "pattrstorage",
-					"varname" : "u156002587"
+					"text" : "pattrstorage WiiMote",
+					"varname" : "WiiMote"
 				}
 
 			}
@@ -99,9 +110,17 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 1185.0, 1065.0, 59.5, 20.0 ],
+					"patching_rect" : [ 1230.0, 1065.0, 59.5, 20.0 ],
+					"restore" : 					{
+						"OSC_In_Port" : [ 7000 ],
+						"OSC_Out_IP" : [ "localhost" ],
+						"OSC_Out_Port" : [ 8000 ],
+						"Vibrate_Receive" : [ "WiiVibrate" ],
+						"Wii_Number" : [ 1 ]
+					}
+,
 					"text" : "autopattr",
-					"varname" : "u697002978"
+					"varname" : "u162000790"
 				}
 
 			}
@@ -2789,16 +2808,16 @@
 ,
 					"patching_rect" : [ 1080.0, 720.0, 92.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
-						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontface" : 0,
+						"digest" : ""
 					}
 ,
 					"text" : "p button.assign"
@@ -3042,16 +3061,16 @@
 ,
 					"patching_rect" : [ 975.0, 660.0, 105.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
-						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontface" : 0,
+						"digest" : ""
 					}
 ,
 					"text" : "p motionfeedback"
@@ -3973,16 +3992,16 @@
 ,
 									"patching_rect" : [ 195.0, 150.0, 87.0, 20.0 ],
 									"saved_object_attributes" : 									{
-										"fontface" : 0,
-										"fontsize" : 12.0,
-										"default_fontface" : 0,
-										"digest" : "",
 										"default_fontname" : "Arial",
 										"fontname" : "Arial",
 										"tags" : "",
 										"default_fontsize" : 12.0,
 										"description" : "",
-										"globalpatchername" : ""
+										"globalpatchername" : "",
+										"fontface" : 0,
+										"fontsize" : 12.0,
+										"default_fontface" : 0,
+										"digest" : ""
 									}
 ,
 									"text" : "p joy.feedback"
@@ -5318,16 +5337,16 @@
 ,
 					"patching_rect" : [ 195.0, 990.0, 92.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
-						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontface" : 0,
+						"digest" : ""
 					}
 ,
 					"text" : "p button.assign"
@@ -6489,16 +6508,16 @@
 ,
 					"patching_rect" : [ 750.0, 975.0, 92.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
-						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontface" : 0,
+						"digest" : ""
 					}
 ,
 					"text" : "p button.assign"
@@ -7615,16 +7634,16 @@
 ,
 					"patching_rect" : [ 480.0, 975.0, 92.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
-						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontface" : 0,
+						"digest" : ""
 					}
 ,
 					"text" : "p button.assign"
@@ -8237,16 +8256,16 @@
 ,
 					"patching_rect" : [ 165.0, 1020.0, 87.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
-						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontface" : 0,
+						"digest" : ""
 					}
 ,
 					"text" : "p joy.feedback"
@@ -8416,7 +8435,8 @@
 					"patching_rect" : [ 705.0, 60.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 75.0, 90.0, 20.0 ],
-					"text" : "WiiVibrate"
+					"text" : "WiiVibrate",
+					"varname" : "Vibrate_Receive"
 				}
 
 			}
@@ -8511,7 +8531,8 @@
 					"patching_rect" : [ 480.0, 60.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 135.0, 90.0, 20.0 ],
-					"text" : "localhost"
+					"text" : "localhost",
+					"varname" : "OSC_Out_IP"
 				}
 
 			}
@@ -8576,7 +8597,8 @@
 					"patching_rect" : [ 375.0, 60.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 105.0, 90.0, 20.0 ],
-					"text" : "8000"
+					"text" : "8000",
+					"varname" : "OSC_Out_Port"
 				}
 
 			}
@@ -10127,16 +10149,16 @@
 ,
 					"patching_rect" : [ 615.0, 735.0, 92.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
-						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontface" : 0,
+						"digest" : ""
 					}
 ,
 					"text" : "p button.assign"
@@ -11223,16 +11245,16 @@
 ,
 					"patching_rect" : [ 510.0, 735.0, 92.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
-						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontface" : 0,
+						"digest" : ""
 					}
 ,
 					"text" : "p button.assign"
@@ -12364,16 +12386,16 @@
 ,
 					"patching_rect" : [ 405.0, 735.0, 92.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
-						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontface" : 0,
+						"digest" : ""
 					}
 ,
 					"text" : "p button.assign"
@@ -13475,16 +13497,16 @@
 ,
 					"patching_rect" : [ 675.0, 570.0, 92.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
-						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontface" : 0,
+						"digest" : ""
 					}
 ,
 					"text" : "p button.assign"
@@ -14572,16 +14594,16 @@
 ,
 					"patching_rect" : [ 570.0, 570.0, 92.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
-						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontface" : 0,
+						"digest" : ""
 					}
 ,
 					"text" : "p button.assign"
@@ -15669,16 +15691,16 @@
 ,
 					"patching_rect" : [ 465.0, 570.0, 92.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
-						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
 						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"fontsize" : 12.0,
+						"default_fontface" : 0,
+						"digest" : ""
 					}
 ,
 					"text" : "p button.assign"
@@ -16274,7 +16296,8 @@
 					"patching_rect" : [ 240.0, 60.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 45.0, 90.0, 20.0 ],
-					"text" : "1"
+					"text" : "1",
+					"varname" : "Wii_Number"
 				}
 
 			}
@@ -16385,7 +16408,8 @@
 					"patching_rect" : [ 30.0, 30.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 15.0, 90.0, 20.0 ],
-					"text" : "7000"
+					"text" : "7000",
+					"varname" : "OSC_In_Port"
 				}
 
 			}
