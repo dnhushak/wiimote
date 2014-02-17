@@ -7,9 +7,9 @@
 			"revision" : 4
 		}
 ,
-		"rect" : [ 0.0, 44.0, 2560.0, 1346.0 ],
+		"rect" : [ 1469.0, 454.0, 429.0, 321.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -42,12 +42,12 @@
 						"Message" : [ "message" ],
 						"Outport" : [ "WiiOut" ],
 						"Prepend" : [ "A" ],
-						"Prepend_En" : [ 0 ],
+						"Prepend_En" : [ 1 ],
 						"Response" : [ 3 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u721003337"
+					"varname" : "u760003815"
 				}
 
 			}
@@ -431,7 +431,8 @@
 					"patching_rect" : [ 510.0, 255.0, 145.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 30.0, 145.0, 34.0 ],
-					"text" : "A Button"
+					"text" : "A Button",
+					"varname" : "Name"
 				}
 
 			}
