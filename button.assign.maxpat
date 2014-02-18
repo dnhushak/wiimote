@@ -3,11 +3,12 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 4
+			"minor" : 1,
+			"revision" : 3,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 1469.0, 454.0, 429.0, 321.0 ],
+		"rect" : [ 0.0, 44.0, 457.0, 322.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -30,6 +31,53 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 510.0, 225.0, 74.0, 20.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-8",
+					"keymode" : 1,
+					"lines" : 1,
+					"maxclass" : "textedit",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 510.0, 165.0, 195.0, 20.0 ],
+					"text" : "A Button",
+					"varname" : "ButtonName"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 510.0, 195.0, 61.0, 20.0 ],
+					"text" : "route text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -37,17 +85,18 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 420.0, 60.0, 59.5, 20.0 ],
 					"restore" : 					{
-						"Append" : [ "Append" ],
-						"Append_En" : [ 0 ],
-						"Message" : [ "message" ],
+						"Append" : [ "A" ],
+						"AppendEn" : [ 0 ],
+						"ButtonName" : [ "A", "Button" ],
+						"Message" : [ "A" ],
 						"Outport" : [ "WiiOut" ],
 						"Prepend" : [ "A" ],
-						"Prepend_En" : [ 1 ],
+						"PrependEn" : [ 0 ],
 						"Response" : [ 3 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u760003815"
+					"varname" : "u476003153"
 				}
 
 			}
@@ -125,6 +174,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-4",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -140,6 +190,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-85",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -155,6 +206,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-82",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -177,7 +229,7 @@
 					"patching_rect" : [ 135.0, 570.0, 20.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 270.0, 165.0, 20.0, 20.0 ],
-					"varname" : "Append_En"
+					"varname" : "AppendEn"
 				}
 
 			}
@@ -197,6 +249,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-79",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -219,14 +272,13 @@
 					"patching_rect" : [ 120.0, 450.0, 20.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 270.0, 135.0, 20.0, 20.0 ],
-					"varname" : "Prepend_En"
+					"varname" : "PrependEn"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-75",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -240,6 +292,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-67",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -255,6 +308,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-66",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -270,6 +324,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-65",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -313,6 +368,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-59",
 					"keymode" : 1,
 					"lines" : 1,
@@ -375,6 +431,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-42",
 					"keymode" : 1,
 					"lines" : 1,
@@ -386,7 +443,7 @@
 					"patching_rect" : [ 300.0, 465.0, 195.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 165.0, 120.0, 20.0 ],
-					"text" : "Append",
+					"text" : "A",
 					"varname" : "Append"
 				}
 
@@ -409,6 +466,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-39",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -424,13 +482,14 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 24.0,
+					"frgb" : 0.0,
 					"id" : "obj-37",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 510.0, 255.0, 145.0, 34.0 ],
+					"patching_rect" : [ 510.0, 255.0, 145.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 30.0, 30.0, 145.0, 34.0 ],
+					"presentation_rect" : [ 30.0, 30.0, 145.0, 33.0 ],
 					"text" : "A Button",
 					"varname" : "Name"
 				}
@@ -607,6 +666,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-52",
 					"keymode" : 1,
 					"lines" : 1,
@@ -618,7 +678,7 @@
 					"patching_rect" : [ 300.0, 630.0, 195.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 255.0, 120.0, 20.0 ],
-					"text" : "WiiOut",
+					"text" : "A",
 					"varname" : "Outport"
 				}
 
@@ -646,7 +706,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 180.0, 315.0, 270.0, 18.0 ],
-					"text" : "message"
+					"text" : "A"
 				}
 
 			}
@@ -654,6 +714,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-44",
 					"keymode" : 1,
 					"lines" : 1,
@@ -665,7 +726,7 @@
 					"patching_rect" : [ 210.0, 255.0, 270.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 105.0, 120.0, 20.0 ],
-					"text" : "message",
+					"text" : "A",
 					"varname" : "Message"
 				}
 
@@ -765,6 +826,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -1011,6 +1090,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1051,8 +1139,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "util.dynamicSend.maxpat",
-				"bootpath" : "/Users/Shared/Git/Maxtraction",
-				"patcherrelativepath" : "../../../Shared/Git/Maxtraction",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Darren",
+				"patcherrelativepath" : "../../../../../Volumes/Riker/Libraries/Max Libraries/Darren",
 				"type" : "JSON",
 				"implicit" : 1
 			}
