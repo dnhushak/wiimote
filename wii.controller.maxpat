@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 154.0, 104.0, 540.0, 600.0 ],
+		"rect" : [ 0.0, 44.0, 566.0, 613.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -256,7 +256,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u366002744"
+					"varname" : "u100000830"
 				}
 
 			}
@@ -1165,7 +1165,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 750.0, 975.0, 82.0, 20.0 ],
 					"text" : "button.assign",
-					"varname" : "button.assign[11]"
+					"varname" : "CAssign"
 				}
 
 			}
@@ -1210,7 +1210,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 480.0, 975.0, 82.0, 20.0 ],
 					"text" : "button.assign",
-					"varname" : "button.assign[12]"
+					"varname" : "ZAssign"
 				}
 
 			}
@@ -2597,7 +2597,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 615.0, 735.0, 82.0, 20.0 ],
 					"text" : "button.assign",
-					"varname" : "button.assign[10]"
+					"varname" : "BAssign"
 				}
 
 			}
@@ -2612,7 +2612,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 510.0, 735.0, 82.0, 20.0 ],
 					"text" : "button.assign",
-					"varname" : "button.assign[9]"
+					"varname" : "TwoAssign"
 				}
 
 			}
@@ -2672,7 +2672,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 405.0, 735.0, 82.0, 20.0 ],
 					"text" : "button.assign",
-					"varname" : "button.assign[8]"
+					"varname" : "OneAssign"
 				}
 
 			}
@@ -2702,7 +2702,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 675.0, 570.0, 82.0, 20.0 ],
 					"text" : "button.assign",
-					"varname" : "button.assign[7]"
+					"varname" : "HomeAssign[1]"
 				}
 
 			}
@@ -2717,7 +2717,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 570.0, 570.0, 82.0, 20.0 ],
 					"text" : "button.assign",
-					"varname" : "button.assign[6]"
+					"varname" : "HomeAssign"
 				}
 
 			}
@@ -2732,7 +2732,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 465.0, 570.0, 82.0, 20.0 ],
 					"text" : "button.assign",
-					"varname" : "button.assign[5]"
+					"varname" : "MinusAssign"
 				}
 
 			}
@@ -2807,7 +2807,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 360.0, 570.0, 82.0, 20.0 ],
 					"text" : "button.assign",
-					"varname" : "button.assign"
+					"varname" : "AAssign"
 				}
 
 			}
@@ -2822,7 +2822,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 675.0, 405.0, 82.0, 20.0 ],
 					"text" : "button.assign",
-					"varname" : "button.assign[4]"
+					"varname" : "DownAssign"
 				}
 
 			}
@@ -2837,7 +2837,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 570.0, 405.0, 82.0, 20.0 ],
 					"text" : "button.assign",
-					"varname" : "button.assign[3]"
+					"varname" : "RightAssign"
 				}
 
 			}
@@ -2852,7 +2852,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 465.0, 405.0, 82.0, 20.0 ],
 					"text" : "button.assign",
-					"varname" : "button.assign[2]"
+					"varname" : "LeftAssign"
 				}
 
 			}
@@ -2960,7 +2960,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 360.0, 405.0, 82.0, 20.0 ],
 					"text" : "button.assign",
-					"varname" : "button.assign[1]"
+					"varname" : "UpAssign"
 				}
 
 			}
@@ -5263,8 +5263,8 @@
 			}
 , 			{
 				"name" : "WiiMote.json",
-				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Kinection",
+				"patcherrelativepath" : "../Kinection",
 				"type" : "JSON",
 				"implicit" : 1
 			}
