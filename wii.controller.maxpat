@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 154.0, 104.0, 622.0, 629.0 ],
+		"rect" : [ 154.0, 104.0, 540.0, 600.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -29,6 +29,23 @@
 		"tags" : "",
 		"showontab" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 30.0,
+					"frgb" : 0.0,
+					"id" : "obj-329",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 690.0, 630.0, 360.0, 74.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 135.0, 540.0, 390.0, 40.0 ],
+					"text" : "WiiMote Controller Interface"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -172,6 +189,7 @@
 			}
 , 			{
 				"box" : 				{
+					"autorestore" : "WiiMote.json",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-135",
@@ -183,7 +201,7 @@
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 836, 44, 1093, 896 ]
+						"storage_rect" : [ 766, 44, 1220, 302 ]
 					}
 ,
 					"text" : "pattrstorage WiiMote",
@@ -210,7 +228,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u614000746"
+					"varname" : "u682007511"
 				}
 
 			}
@@ -5046,7 +5064,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "wiifront.png",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
@@ -5054,20 +5072,20 @@
 , 			{
 				"name" : "util.oscToList.maxpat",
 				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Darren",
-				"patcherrelativepath" : "../../../../../Volumes/Riker/Libraries/Max Libraries/Darren",
+				"patcherrelativepath" : "../Darren",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wiiback.png",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "button.assign.maxpat",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -5075,113 +5093,120 @@
 , 			{
 				"name" : "util.dynamicSend.maxpat",
 				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Darren",
-				"patcherrelativepath" : "../../../../../Volumes/Riker/Libraries/Max Libraries/Darren",
+				"patcherrelativepath" : "../Darren",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "util.listToOsc.maxpat",
 				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Darren",
-				"patcherrelativepath" : "../../../../../Volumes/Riker/Libraries/Max Libraries/Darren",
+				"patcherrelativepath" : "../Darren",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "util.dynamicReceive.maxpat",
 				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Darren",
-				"patcherrelativepath" : "../../../../../Volumes/Riker/Libraries/Max Libraries/Darren",
+				"patcherrelativepath" : "../Darren",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wiichuck.png",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wiichuckjoystickyl.png",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wiichuckjoystickgr.png",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wiichuckzyl.png",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wiichuckzgr.png",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wiichuckcyl.png",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wiichuckcgr.png",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "joystick.assign.maxpat",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wiimotion.png",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wiimotionyl.png",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wiimotiongr.png",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "motion.assign.maxpat",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "battery10.png",
-				"bootpath" : "/Users/dnhushak/Documents/Projects/Wiimote",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "WiiMote.json",
+				"bootpath" : "/Volumes/Riker/Libraries/Max Libraries/Wiimote",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ]
