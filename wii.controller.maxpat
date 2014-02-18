@@ -31,6 +31,34 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 885.0, 300.0, 50.0, 20.0 ],
+					"text" : "pipe 10"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-19",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 945.0, 300.0, 32.5, 18.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
 					"fontsize" : 30.0,
 					"frgb" : 0.0,
 					"id" : "obj-329",
@@ -38,7 +66,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 690.0, 630.0, 360.0, 74.0 ],
+					"patching_rect" : [ 810.0, 510.0, 360.0, 74.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 135.0, 540.0, 390.0, 40.0 ],
 					"text" : "WiiMote Controller Interface"
@@ -126,7 +154,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 825.0, 315.0, 47.0, 20.0 ],
+					"patching_rect" : [ 825.0, 300.0, 47.0, 20.0 ],
 					"text" : "r #0_lb"
 				}
 
@@ -182,7 +210,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 840.0, 420.0, 91.0, 18.0 ],
+					"patching_rect" : [ 870.0, 420.0, 91.0, 18.0 ],
 					"text" : "storagewindow"
 				}
 
@@ -197,7 +225,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 960.0, 450.0, 121.0, 20.0 ],
+					"patching_rect" : [ 960.0, 465.0, 121.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
@@ -228,7 +256,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u682007511"
+					"varname" : "u366002744"
 				}
 
 			}
@@ -807,6 +835,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-114",
+									"int" : 1,
 									"maxclass" : "gswitch",
 									"numinlets" : 3,
 									"numoutlets" : 1,
@@ -4059,6 +4088,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 894.5, 329.0, 940.5, 329.0, 940.5, 290.0, 954.5, 290.0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 1.0, 0.890196, 0.090196, 1.0 ],
 					"destination" : [ "obj-154", 0 ],
 					"disabled" : 0,
@@ -4246,8 +4285,18 @@
 					"destination" : [ "obj-135", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 849.5, 443.5, 969.5, 443.5 ],
+					"midpoints" : [ 879.5, 443.5, 969.5, 443.5 ],
 					"source" : [ "obj-184", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 834.5, 329.0, 876.5, 329.0, 876.5, 290.0, 894.5, 290.0 ],
+					"source" : [ "obj-186", 0 ]
 				}
 
 			}
@@ -4257,6 +4306,16 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-186", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-152", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 954.5, 368.0, 834.5, 368.0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
